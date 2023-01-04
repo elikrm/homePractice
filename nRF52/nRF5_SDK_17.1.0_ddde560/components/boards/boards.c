@@ -72,6 +72,14 @@ void bsp_board_led_off(uint32_t led_idx)
     nrf_gpio_pin_write(m_board_led_list[led_idx], LEDS_ACTIVE_STATE ? 0 : 1);
 }
 /*start of Elnaz add*/
+void bsp_ledTwoOn()
+{
+  bsp_board_led_on(1);
+}
+void bsp_ledTwoOff()
+{
+  bsp_board_led_off(1);
+}
 void bsp_ledOneOn()
 {
   bsp_board_led_on(0);

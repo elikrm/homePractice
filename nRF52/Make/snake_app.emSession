@@ -23,8 +23,6 @@
  <Project>
   <ProjectSessionItem path="snake firmware"/>
   <ProjectSessionItem path="snake firmware;snake_app"/>
-  <ProjectSessionItem path="snake firmware;snake_app;.Header files"/>
-  <ProjectSessionItem path="snake firmware;snake_app;.Header files;../nRF5_SDK_17.1.0_ddde560"/>
   <ProjectSessionItem path="snake firmware;snake_app;nRF5_SDK_17.1.0_ddde560"/>
   <ProjectSessionItem path="snake firmware;snake_app;nRF5_SDK_17.1.0_ddde560;components"/>
   <ProjectSessionItem path="snake firmware;snake_app;nRF5_SDK_17.1.0_ddde560;components;boards"/>
@@ -61,13 +59,16 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="115" useTextEdit="1" path="../src/ADC.c" left="0" top="95" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="19" useTextEdit="1" path="../src/main.c" left="0" top="9" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="273" useTextEdit="1" path="Makefile" left="0" top="270" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="73" useTextEdit="1" openedFrom="C:/Elnaz/stateMachine_snakeGame/snake-firmware/nRF52/src/main.c" path="../nRF5_SDK_17.1.0_ddde560/components/boards/boards.c" left="0" top="59" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="21" y="664" useTextEdit="1" openedFrom="C:/Elnaz/stateMachine_snakeGame/snake-firmware/nRF52/nRF5_SDK_17.1.0_ddde560/components/boards/boards.c" path="../nRF5_SDK_17.1.0_ddde560/modules/nrfx/hal/nrf_gpio.h" left="0" top="661" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="116" useTextEdit="1" openedFrom="C:/Elnaz/stateMachine_snakeGame/snake-firmware/nRF52/nRF5_SDK_17.1.0_ddde560/components/boards/boards.c" path="../nRF5_SDK_17.1.0_ddde560/components/boards/boards.h" left="0" top="102" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="23" useTextEdit="1" path="../../../nRF52/src/main.c" left="0" selected="1" top="4" codecName=""/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="14" y="40" useTextEdit="1" path="../src/main.c" left="0" top="21" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="77" useTextEdit="1" openedFrom="C:/Elnaz/stateMachine_snakeGame/snake-firmware/homePractice/nRF52/src/main.c" path="../nRF5_SDK_17.1.0_ddde560/components/boards/boards.c" left="0" top="57" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="17" y="116" useTextEdit="1" openedFrom="C:/Elnaz/stateMachine_snakeGame/snake-firmware/homePractice/nRF52/nRF5_SDK_17.1.0_ddde560/components/boards/boards.c" path="../nRF5_SDK_17.1.0_ddde560/components/boards/boards.h" left="0" top="96" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="36" y="54" useTextEdit="1" openedFrom="C:/Elnaz/stateMachine_snakeGame/snake-firmware/homePractice/nRF52/src/main.c" path="../nRF5_SDK_17.1.0_ddde560/components/libraries/delay/nrf_delay.h" left="0" top="48" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="41" y="204" useTextEdit="1" openedFrom="C:/Elnaz/stateMachine_snakeGame/snake-firmware/homePractice/nRF52/nRF5_SDK_17.1.0_ddde560/components/libraries/delay/nrf_delay.h" path="../nRF5_SDK_17.1.0_ddde560/integration/nrfx/nrfx_glue.h" left="0" top="189" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="53" y="170" useTextEdit="1" openedFrom="C:/Elnaz/stateMachine_snakeGame/snake-firmware/homePractice/nRF52/nRF5_SDK_17.1.0_ddde560/integration/nrfx/nrfx_glue.h" path="../nRF5_SDK_17.1.0_ddde560/modules/nrfx/soc/nrfx_coredep.h" left="0" top="150" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="22" y="175" useTextEdit="1" path="Makefile" left="0" selected="1" top="184" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="13" y="43" useTextEdit="1" openedFrom="C:/Elnaz/stateMachine_snakeGame/snake-firmware/homePractice/nRF52/src/main.c" path="../nRF5_SDK_17.1.0_ddde560/integration/nrfx/legacy/nrf_drv_systick.h" left="0" top="22" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/Elnaz/stateMachine_snakeGame/snake-firmware/homePractice/nRF52/nRF5_SDK_17.1.0_ddde560/integration/nrfx/legacy/nrf_drv_systick.h" path="../nRF5_SDK_17.1.0_ddde560/modules/nrfx/drivers/include/nrfx_systick.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/Elnaz/stateMachine_snakeGame/snake-firmware/homePractice/nRF52/nRF5_SDK_17.1.0_ddde560/modules/nrfx/drivers/include/nrfx_systick.h" path="../nRF5_SDK_17.1.0_ddde560/modules/nrfx/nrfx.h" left="0" top="23" codecName="Default"/>
  </Files>
- <EMStudioWindow activeProject="snake_app" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="C:/Elnaz/TektIndustries/snake-firmware/nRF52/src/main.c&#xa;C:/Elnaz/stateMachine_snakeGame/snake-firmware/nRF52/src/main.c" fileDialogInitialDirectory="C:/Elnaz/stateMachine_snakeGame/snake-firmware/nRF52/src" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <EMStudioWindow activeProject="snake_app" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="C:/Elnaz/TektIndustries/snake-firmware/nRF52/src/main.c&#xa;C:/Elnaz/stateMachine_snakeGame/snake-firmware/nRF52/src/main.c" fileDialogInitialDirectory="C:/Elnaz/stateMachine_snakeGame/snake-firmware/nRF52/src" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

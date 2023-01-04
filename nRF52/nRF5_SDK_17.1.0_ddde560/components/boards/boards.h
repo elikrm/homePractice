@@ -114,6 +114,8 @@ extern "C" {
  */
 bool bsp_board_led_state_get(uint32_t led_idx);
 
+void bsp_ledTwoOn();
+void bsp_ledTwoOff();
 void bsp_ledOneOn();
 void bsp_ledOneOff();
 /**

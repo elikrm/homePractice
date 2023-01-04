@@ -12026,6 +12026,14 @@
 #define POWER_CONFIG_SOC_OBSERVER_PRIO 0
 #endif
 
+//==========================================================
+// <q> NRFX_SYSTICK_ENABLED  - nrfx_systick - ARM(R) SysTick driver
+ 
+
+#ifndef NRFX_SYSTICK_ENABLED
+#define NRFX_SYSTICK_ENABLED 1
+#endif
+
 // </h> 
 //==========================================================
 
