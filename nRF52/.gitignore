@@ -1,0 +1,8 @@
+# Build intermediary files
+*.o
+*.d
+Output/
+_build
+
+# Unit test reports
+TEST*.xml

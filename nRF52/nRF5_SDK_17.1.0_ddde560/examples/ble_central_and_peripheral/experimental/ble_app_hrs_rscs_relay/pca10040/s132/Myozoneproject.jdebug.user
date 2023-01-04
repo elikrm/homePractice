@@ -1,0 +1,32 @@
+
+Breakpoint=C:/Elnaz/TektIndustries/tetrapack-firmware/nRF52/nRF5_SDK_17.1.0_ddde560/examples/ble_central_and_peripheral/experimental/ble_app_hrs_rscs_relay/main.c:1193, State=BP_STATE_ON
+Breakpoint=C:/Elnaz/TektIndustries/tetrapack-firmware/nRF52/nRF5_SDK_17.1.0_ddde560/examples/ble_central_and_peripheral/experimental/ble_app_hrs_rscs_relay/main.c:1198, State=BP_STATE_ON
+OpenDocument="Myozoneproject.jdebug.user", FilePath="C:/Elnaz/TektIndustries/tetrapack-firmware/nRF52/nRF5_SDK_17.1.0_ddde560/examples/ble_central_and_peripheral/experimental/ble_app_hrs_rscs_relay/pca10040/s132/Myozoneproject.jdebug.user", Line=0
+OpenDocument="errorfile", FilePath="C:/Elnaz/TektIndustries/tetrapack-firmware/nRF52/nRF5_SDK_17.1.0_ddde560/examples/ble_central_and_peripheral/experimental/ble_app_hrs_rscs_relay/pca10040/s132/errorfile", Line=81
+OpenDocument="app_error_handler_gcc.c", FilePath="C:/Elnaz/TektIndustries/tetrapack-firmware/nRF52/nRF5_SDK_17.1.0_ddde560/components/libraries/util/app_error_handler_gcc.c", Line=38
+OpenDocument="app_error_weak.c", FilePath="C:/Elnaz/TektIndustries/tetrapack-firmware/nRF52/nRF5_SDK_17.1.0_ddde560/components/libraries/util/app_error_weak.c", Line=86
+OpenDocument="main.c", FilePath="C:/Elnaz/TektIndustries/tetrapack-firmware/nRF52/nRF5_SDK_17.1.0_ddde560/examples/ble_central_and_peripheral/experimental/ble_app_hrs_rscs_relay/main.c", Line=1174
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Call Stack", DockArea=RIGHT, x=0, y=1, w=598, h=189, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Registers 1", DockArea=RIGHT, x=0, y=2, w=598, h=197, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, FilteredItems=[], RefreshRate=1
+OpenWindow="Source Files", DockArea=LEFT, x=0, y=2, w=300, h=105, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Disassembly", DockArea=RIGHT, x=0, y=0, w=598, h=186, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Break & Tracepoints", DockArea=LEFT, x=0, y=0, w=300, h=191, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VectorCatchIndexMask=254
+OpenWindow="Memory 1", DockArea=BOTTOM, x=0, y=0, w=365, h=354, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, EditorAddress=0x0
+OpenWindow="Watched Data 1", DockArea=LEFT, x=0, y=4, w=300, h=64, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Functions", DockArea=LEFT, x=0, y=1, w=300, h=105, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Code Profile", DockArea=LEFT, x=0, y=3, w=300, h=105, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, GroupByFiles=0, SortRespectsFilters=0, ParentRelativeLoad=0
+OpenWindow="Instruction Trace", DockArea=BOTTOM, x=3, y=0, w=177, h=354, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Timeline", DockArea=BOTTOM, x=2, y=0, w=481, h=354, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=1, DataPaneShown=1, PowerPaneShown=1, CodePaneShown=1, PinCursor="Cursor Movable", TimePerDiv="1 ns / Div", TimeStampFormat="Time", DataGraphDrawAsPoints=0, DataGraphLegendShown=1, DataGraphUniformSampleSpacing=0, DataGraphLegendPosition="318;-43", PowerGraphDrawAsPoints=0, PowerGraphLegendShown=1, PowerGraphAvgFilterTime=Off, PowerGraphAvgFilterLen=Off, PowerGraphUniformSampleSpacing=0, PowerGraphLegendPosition="296;-61", CodeGraphLegendShown=1, CodeGraphLegendPosition="317;0"
+OpenWindow="Console", DockArea=BOTTOM, x=1, y=0, w=894, h=354, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+TableHeader="Vector Catches", SortCol="", SortOrder="ASCENDING", VisibleCols=["";"Vector Catch";"Description"], ColWidths=[50;300;500]
+TableHeader="Break & Tracepoints", SortCol="", SortOrder="ASCENDING", VisibleCols=["";"Type";"Location";"Extras"], ColWidths=[100;100;128;100]
+TableHeader="Functions", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Address";"Size";"#Insts";"Source"], ColWidths=[920;100;100;100;252]
+TableHeader="Call Stack", SortCol="Function", SortOrder="ASCENDING", VisibleCols=["Function";"Stack Frame";"Source";"PC";"Return Address";"Stack Used"], ColWidths=[138;112;146;100;168;100]
+TableHeader="Source Files", SortCol="File", SortOrder="ASCENDING", VisibleCols=["File";"Status";"Size";"#Insts";"Path"], ColWidths=[168;100;100;100;1260]
+TableHeader="Code Profile", SortCol="File / Function", SortOrder="ASCENDING", VisibleCols=["File / Function";"Source Coverage";"Inst. Coverage";"Run Count";"Fetch Count";"Load"], ColWidths=[1006;128;158;118;118;100]
+TableHeader="Power Sampling", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="Registers 1", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Description"], ColWidths=[100;105;372]
+TableHeader="Watched Data 1", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Location";"Refresh"], ColWidths=[100;100;100;100]
+TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
+TableHeader="TargetExceptionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Address";"Description"], ColWidths=[200;100;100;351]
