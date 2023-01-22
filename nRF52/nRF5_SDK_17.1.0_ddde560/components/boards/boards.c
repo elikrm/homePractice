@@ -72,19 +72,27 @@ void bsp_board_led_off(uint32_t led_idx)
     nrf_gpio_pin_write(m_board_led_list[led_idx], LEDS_ACTIVE_STATE ? 0 : 1);
 }
 /*start of Elnaz add*/
-void bsp_ledTwoOn()
+void bsp_ledThreeOn(void)
+{
+  bsp_board_led_on(2);
+}
+void bsp_ledThreeOff(void)
+{
+  bsp_board_led_off(2);
+}
+void bsp_ledTwoOn(void)
 {
   bsp_board_led_on(1);
 }
-void bsp_ledTwoOff()
+void bsp_ledTwoOff(void)
 {
   bsp_board_led_off(1);
 }
-void bsp_ledOneOn()
+void bsp_ledOneOn(void)
 {
   bsp_board_led_on(0);
 }
-void bsp_ledOneOff()
+void bsp_ledOneOff(void)
 {
   bsp_board_led_off(0);
 }

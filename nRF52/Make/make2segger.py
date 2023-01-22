@@ -132,7 +132,7 @@ def get_target_settings(target: str) -> str:
             arm_endian="Little"
             arm_fpu_type="FPv4-SP-D16"
             arm_target_device_name="nRF52833_xxAA"
-            debug_register_definition_file="../nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk/nrf52833.svd"
+            debug_register_definition_file="../nRF5_SDK_17.1.0_ddde560/modules/nrfx/mdk/nrf52840.svd"
 """
     elif target == "samc21j18a":
         return """

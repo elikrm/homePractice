@@ -114,10 +114,12 @@ extern "C" {
  */
 bool bsp_board_led_state_get(uint32_t led_idx);
 
-void bsp_ledTwoOn();
-void bsp_ledTwoOff();
-void bsp_ledOneOn();
-void bsp_ledOneOff();
+void bsp_ledThreeOn(void);
+void bsp_ledThreeOff(void);
+void bsp_ledTwoOn(void);
+void bsp_ledTwoOff(void);
+void bsp_ledOneOn(void);
+void bsp_ledOneOff(void);
 /**
  * Function for turning on an LED.
  *
