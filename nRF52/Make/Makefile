@@ -1,4 +1,4 @@
-PROJECT_NAME     := snake_app
+PROJECT_NAME     := Clock
 TARGETS          := nrf52833_xxaa
 
 
@@ -13,7 +13,7 @@ else
 endif
 
 $(OUTPUT_DIRECTORY)/nrf52833_xxaa.out: \
-  LINKER_SCRIPT  := snake_app_gcc_nrf52.ld
+  LINKER_SCRIPT  := clock_gcc_nrf52.ld
 
 HEX_FILES := \
   $(SOFTDEVICE_HEX_FILE) \
@@ -21,8 +21,6 @@ HEX_FILES := \
 
 # Source files common to all targets
 SRC_FILES += \
-  $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_saadc.c \
-  $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_systick.c \
   $(SDK_ROOT)/modules/nrfx/mdk/gcc_startup_nrf52833.S \
   $(SDK_ROOT)/components/libraries/log/src/nrf_log_backend_rtt.c \
   $(SDK_ROOT)/components/libraries/log/src/nrf_log_backend_serial.c \
@@ -38,7 +36,6 @@ SRC_FILES += \
   $(SDK_ROOT)/components/libraries/timer/app_timer2.c \
   $(SDK_ROOT)/components/libraries/uart/app_uart_fifo.c \
   $(SDK_ROOT)/components/libraries/util/app_util_platform.c \
-  $(SDK_ROOT)/components/libraries/timer/drv_rtc.c \
   $(SDK_ROOT)/components/libraries/hardfault/hardfault_implementation.c \
   $(SDK_ROOT)/components/libraries/util/nrf_assert.c \
   $(SDK_ROOT)/components/libraries/atomic_fifo/nrf_atfifo.c \
@@ -70,13 +67,33 @@ SRC_FILES += \
   $(SDK_ROOT)/integration/nrfx/legacy/nrf_drv_twi.c \
   $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_twi.c \
   $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_twim.c \
+  $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_clock.c \
+  $(SDK_ROOT)/integration\nrfx\legacy\nrf_drv_clock.c\
+  $(SDK_ROOT)/components\softdevice\common\nrf_sdh.c
 
 
   SRC_FILES += \
+  $(PROJ_DIR)/src/My_timer.c\
+  $(PROJ_DIR)/src/LCD.c\
   $(PROJ_DIR)/src/main.c \
-  $(PROJ_DIR)/src/miros.c\
   $(PROJ_DIR)/src/bsp.c\
-
+  $(PROJ_DIR)/src/qpc/ports/arm-cm/qxk/gnu/qxk_port.c\
+  $(PROJ_DIR)/src/qpc/src/qf/qep_hsm.c\
+  $(PROJ_DIR)/src/qpc/src/qf/qep_msm.c\
+  $(PROJ_DIR)/src/qpc/src/qf/qf_act.c\
+  $(PROJ_DIR)/src/qpc/src/qf/qf_actq.c\
+  $(PROJ_DIR)/src/qpc/src/qf/qf_defer.c\
+  $(PROJ_DIR)/src/qpc/src/qf/qf_dyn.c\
+  $(PROJ_DIR)/src/qpc/src/qf/qf_mem.c\
+  $(PROJ_DIR)/src/qpc/src/qf/qf_ps.c\
+  $(PROJ_DIR)/src/qpc/src/qf/qf_qact.c\
+  $(PROJ_DIR)/src/qpc/src/qf/qf_qeq.c\
+  $(PROJ_DIR)/src/qpc/src/qf/qf_qmact.c\
+  $(PROJ_DIR)/src/qpc/src/qf/qf_time.c\
+  $(PROJ_DIR)/src/qpc/src/qxk/qxk.c\
+  $(PROJ_DIR)/src/qpc/src/qxk/qxk_mutex.c\
+  $(PROJ_DIR)/src/qpc/src/qxk/qxk_sema.c\
+  $(PROJ_DIR)/src/qpc/src/qxk/qxk_xthr.c\
 
 # Include folders common to all targets
 INC_FOLDERS += \
@@ -181,15 +198,19 @@ INC_FOLDERS += \
   $(SDK_ROOT)/integration/nrfx/legacy\
   $(PROJ_DIR)/src \
   $(SDK_ROOT)/components/libraries/sensorsim\
-  $(SDK_ROOT)/components\libraries\log \
+  $(SDK_ROOT)/modules\nrfx\drivers\include\
+  $(SDK_ROOT)/components\softdevice\common\
 
 
 #INC_FOLDERS += \
 #  $(SDK_ROOT)/components/drivers_nrf/nrf_soc_nosd 
 
 INC_FOLDERS += \
+  $(PROJ_DIR)\
   $(PROJ_DIR)/src \
   $(PROJ_DIR)/config \
+  $(PROJ_DIR)/src/qpc/include\
+  $(PROJ_DIR)/src/qpc/ports/arm-cm/qxk/gnu
 
 # Libraries common to all targets
 LIB_FILES += \

@@ -2,7 +2,7 @@
 #include <stdint.h>  /* Standard integers. WG14/N843 C99 Standard */
 
 #include "bsp.h"
-#include "miros.h"
+#include "qpc.h"
 #include "cmsis_gcc.h"
 #include "nrf.h"
 #include "nrf_rtc.h"
@@ -53,10 +53,9 @@ static uint32_t volatile l_tickCtr;
 
 void SysTick_Handler(void) {
     //++l_tickCtr;
-    OS_tick();
-    __disable_irq();
-    OS_sched();
-    __enable_irq();
+  QXK_ISR_ENTRY();
+  QF_TICK_X(0, (void*)0);
+  QXK_ISR_EXIT();
 }
 
 void BSP_init(void) {
@@ -74,15 +73,19 @@ void BSP_init(void) {
     __enable_irq();
     */
 }
-void OS_onStartup(void) {
+void QF_onStartup(void) {
     SystemCoreClockUpdate();
     SysTick_Config(SystemCoreClock / BSP_TICKS_PER_SEC);
 
     /* set the SysTick interrupt priority (highest) */
-    NVIC_SetPriority(SysTick_IRQn, 0U);
+    /* Kernel aware interrupt */
+    NVIC_SetPriority(SysTick_IRQn, QF_AWARE_ISR_CMSIS_PRI);
     /* Configure SysTick to interrupt at the requested rate. */
     //SysTick->LOAD = (configSYSTICK_CLOCK_HZ/configTICK_RATE_HZ) - 1UL;
     //SysTick->CTRL = ( portNVIC_SYSTICK_CLK_BIT | SysTick_CTRL_TICKINT_Msk | SysTick_CTRL_ENABLE_Msk );
+}
+
+void QF_onCleanu(void){
 }
 /*
 uint32_t BSP_tickCtr(void) {
@@ -102,7 +105,7 @@ void BSP_delay(uint32_t ticks) {
 }
 */
 
-void OS_onIdle(void) 
+void QXK_onIdle(void) 
 {
 //Idle thread is the best place to apply low power sleep mode
 //toggle a pin up and down
